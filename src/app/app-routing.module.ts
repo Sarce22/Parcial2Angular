@@ -20,6 +20,9 @@ const routes: Routes = [
       },
       {
         path:'',loadChildren: () => import('./cita/cita.module').then(m=>m.CitaModule)
+      },
+      {
+        path: 'search', loadChildren: () => import('./search/search.module').then(m => m.SearchModule)
       }
 
 

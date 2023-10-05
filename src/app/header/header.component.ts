@@ -11,4 +11,9 @@ export class HeaderComponent {
   constructor(private router:Router) {
 
   }
+
+  searchAction(searchText:any) {
+    console.log(searchText);
+    this.router.navigate(["/dashboard/search/searching", searchText]);
+  }
 }

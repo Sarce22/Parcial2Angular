@@ -8,7 +8,7 @@
         </button>
         
         <div class="collapse navbar-collapse  justify-content-end m-2" id="navbarSupportedContent">
-            <app-search-bar ></app-search-bar>
+            <app-search-bar (searchText)="searchAction($event)"></app-search-bar>
 
         </div>
     </div>
